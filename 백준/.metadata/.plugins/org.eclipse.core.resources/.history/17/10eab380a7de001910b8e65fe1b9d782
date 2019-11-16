@@ -1,0 +1,38 @@
+package samsung;
+
+import java.util.*;
+public class Επ»η {
+	int max =0 ;
+	public static void main(String[] args) {
+		int n;
+		Επ»η app = new Επ»η();
+		Scanner sc = new Scanner(System.in);
+		
+//		n = sc.nextInt();
+		n=7;
+//		int [] t = new int[n];
+//		int [] p = new int[n];
+		int [] t = {3,5,1,1,2,4,2};
+		int [] p = {10,20,10,20,15,40,200};
+		int res = app.bfs(t,p,0,n,0);
+		System.out.println(res);
+
+	}
+	
+	
+
+private  int bfs(int [] t,int [] p,int start,int n,int val ) {
+	if(start>=n) return val;
+	
+	else {
+	for(int i=0;i<n;i++){	
+		int temp=bfs(t,p,start+t[start],n,val+p[start]);
+		if(temp>max)max=temp;
+	}
+	 return max;
+	}
+	
+	
+}
+
+}
