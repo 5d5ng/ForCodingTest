@@ -12,7 +12,7 @@ public class ¼è¸·´ë±â {
     public int solution(String arrangement) {
         int answer = 0;
         String temp = arrangement.replace("()", "0");
-        Stack s = new Stack<Character>();
+        Stack<Character> s = new Stack<Character>();
         for(int i=0;i<temp.length();i++) {	
         	char t = temp.charAt(i);
         	if(t=='(') {

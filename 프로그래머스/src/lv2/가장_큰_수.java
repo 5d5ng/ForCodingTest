@@ -1,10 +1,18 @@
-1.정렬을 해야하 하는 문제인지확인
-2.문자열 자르는 함수 잘알아두기 split 과 substring
-3.문자열을 정수로 변환 Integer.ParseInt();
-4.어떤 알고리즘을 이용하여 풀 수 있는 지 확인
+package lv2;
 
+import java.awt.color.CMMException;
+import java.util.Arrays;
+import java.util.Comparator;
 
-//Comparator 정렬 예제
+public class ����_ū_�� {
+
+	public static void main(String[] args) {
+		����_ū_�� app = new ����_ū_��();
+		int [] test = {6,10,2};
+		
+		app.solution(test);
+	}
+	String res = "";
 	public String solution(int[] numbers) {
 		String answer = "";
 		String [] snum = new String[numbers.length];
@@ -25,3 +33,5 @@
 			return "0";
 		return answer;
 	}
+
+}
