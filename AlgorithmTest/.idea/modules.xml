@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmTest.iml" filepath="$PROJECT_DIR$/AlgorithmTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BOJ/BOJ.iml" filepath="$PROJECT_DIR$/BOJ/BOJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmers/Programmers.iml" filepath="$PROJECT_DIR$/Programmers/Programmers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SWEA/SWEA.iml" filepath="$PROJECT_DIR$/SWEA/SWEA.iml" />
+    </modules>
+  </component>
+</project>
