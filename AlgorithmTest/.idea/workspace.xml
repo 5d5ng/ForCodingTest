@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e135d67-c5a0-4a61-9343-f81628f235ef" name="Default Changelist" comment="" />
+    <list default="true" id="8e135d67-c5a0-4a61-9343-f81628f235ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BOJ/src/문자열/다이얼.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/문자열/상수.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BOJ/문자열/단어의개수.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BOJ/문자열/단어의개수.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +38,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -41,7 +46,7 @@
       <recent name="수학" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.단어의개수">
+  <component name="RunManager" selected="Application.다이얼">
     <configuration name="달팽이는올라가고싶다" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="수학.달팽이는올라가고싶다" />
       <module name="BOJ" />
@@ -55,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="단어의개수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="문자열.단어의개수" />
+    <configuration name="다이얼" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.다이얼" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
@@ -94,6 +99,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="상수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.상수" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="문자열.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="단어의개수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.단어의개수" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="문자열.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="단어공부" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="문자열.단어공부" />
       <module name="BOJ" />
@@ -109,7 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.단어의개수" />
+        <item itemvalue="Application.다이얼" />
         <item itemvalue="Application.피보나치수5" />
         <item itemvalue="Application.달팽이는올라가고싶다" />
         <item itemvalue="Application.ACM호텔" />
@@ -129,6 +160,10 @@
       <workItem from="1580480614488" duration="814000" />
       <workItem from="1580481896089" duration="5100000" />
       <workItem from="1580537335713" duration="2892000" />
+      <workItem from="1580651756791" duration="81000" />
+      <workItem from="1580651885382" duration="56000" />
+      <workItem from="1580651965400" duration="1994000" />
+      <workItem from="1580653983202" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="The number of word">
       <created>1580559494898</created>
@@ -159,29 +194,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="981" y="112" key="#Notifications/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580537411025" />
-    <state x="552" y="179" key="#Plugins" timestamp="1580537204538">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="513" y="87" key="#Plugins" timestamp="1580651838531">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="513" y="87" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1580651838531" />
     <state x="552" y="179" key="#Plugins/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580537204538" />
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1580654165334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580654165334" />
+    <state x="594" y="103" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1580653862716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="594" y="103" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.824@0.0.1536.824" timestamp="1580653862716" />
     <state x="470" y="27" key="CommitChangelistDialog2" timestamp="1580560038550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="470" y="27" key="CommitChangelistDialog2/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580560038550" />
-    <state width="1876" height="261" key="GridCell.Tab.0.bottom" timestamp="1580560042932">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1492" height="187" key="GridCell.Tab.0.bottom" timestamp="1580655361390">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="1876" height="261" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580560042932" />
-    <state width="1876" height="261" key="GridCell.Tab.0.center" timestamp="1580560042932">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1492" height="187" key="GridCell.Tab.0.center" timestamp="1580655361390">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="1876" height="261" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580560042932" />
-    <state width="1876" height="261" key="GridCell.Tab.0.left" timestamp="1580560042932">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1492" height="187" key="GridCell.Tab.0.left" timestamp="1580655361390">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="1876" height="261" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580560042932" />
-    <state width="1876" height="261" key="GridCell.Tab.0.right" timestamp="1580560042932">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1492" height="187" key="GridCell.Tab.0.right" timestamp="1580655361390">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1492" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="1876" height="261" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580560042932" />
     <state width="1876" height="348" key="GridCell.Tab.1.bottom" timestamp="1580535718874">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -199,25 +247,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="348" key="GridCell.Tab.1.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580535718874" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1580537433470">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="369" y="109" key="SettingsEditor" timestamp="1580652145039">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="369" y="109" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580652145039" />
     <state x="461" y="162" key="SettingsEditor/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580537433470" />
-    <state x="629" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580537338443">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="503" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1580653983452">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="503" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580653983452" />
     <state x="629" y="344" key="com.intellij.ide.util.TipDialog/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580537338443" />
     <state x="339" y="130" key="new project wizard" timestamp="1580480669344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="339" y="130" key="new project wizard/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580480669344" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1580559509908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="493" y="190" key="run.anything.popup" timestamp="1580654532878">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="493" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1580654532878" />
     <state x="616" y="240" key="run.anything.popup/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580559509908" />
-    <state x="1089" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1580537456140">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="412" y="98" width="672" height="538" key="search.everywhere.popup" timestamp="1580652126531">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="412" y="98" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580652126531" />
     <state x="1089" y="194" width="672" height="678" key="search.everywhere.popup/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580537456140" />
   </component>
 </project>
