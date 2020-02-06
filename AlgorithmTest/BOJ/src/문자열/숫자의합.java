@@ -13,4 +13,7 @@ public class 숫자의합 {
         }
         System.out.println(res);
     }
+
+    //배운것 :substring 은 startindex 까지 포함하여  endindex를 포함하지 않고 자른다.
+
 }
