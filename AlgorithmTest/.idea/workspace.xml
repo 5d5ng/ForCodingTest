@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e135d67-c5a0-4a61-9343-f81628f235ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BOJ/src/재귀/하노이탑이동순서.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/브루트포스/덩치.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/브루트포스/분해합.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/브루트포스/블랙잭.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/브루트포스/체스판다시칠하기.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BOJ/src/문자열/숫자의합.java" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/src/문자열/숫자의합.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BOJ/문자열/숫자의합.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BOJ/문자열/숫자의합.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BOJ/src/재귀/하노이탑이동순서.java" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/src/재귀/하노이탑이동순서.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BOJ/재귀/하노이탑이동순서.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BOJ/재귀/하노이탑이동순서.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -55,7 +58,7 @@
       <recent name="수학" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.하노이탑이동순서">
+  <component name="RunManager" selected="Application.체스판다시칠하기">
     <configuration name="하노이탑이동순서" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="재귀.하노이탑이동순서" />
       <module name="BOJ" />
@@ -69,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="단어의개수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="문자열.단어의개수" />
+    <configuration name="분해합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="브루트포스.분해합" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="문자열.*" />
+          <option name="PATTERN" value="브루트포스.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="숫자의합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="문자열.숫자의합" />
+    <configuration name="덩치" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="브루트포스.덩치" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="문자열.*" />
+          <option name="PATTERN" value="브루트포스.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +98,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="피보나치수5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="재귀.피보나치수5" />
+    <configuration name="블랙잭" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="브루트포스.블랙잭" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="재귀.*" />
+          <option name="PATTERN" value="브루트포스.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="체스판다시칠하기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="브루트포스.체스판다시칠하기" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="브루트포스.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -212,34 +228,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="숫자의합_파이썬" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BOJ" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\LACUC\AppData\Local\Programs\Python\Python37\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BOJ/src/문자열" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BOJ/src/문자열/숫자의합_파이썬.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.체스판다시칠하기" />
+        <item itemvalue="Application.덩치" />
+        <item itemvalue="Application.분해합" />
+        <item itemvalue="Application.블랙잭" />
         <item itemvalue="Application.하노이탑이동순서" />
-        <item itemvalue="Application.피보나치수5" />
-        <item itemvalue="Application.숫자의합" />
-        <item itemvalue="Application.단어의개수" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +262,7 @@
       <workItem from="1580989791192" duration="74000" />
       <workItem from="1580989885434" duration="88000" />
       <workItem from="1580989994136" duration="172000" />
-      <workItem from="1580990199609" duration="7974000" />
+      <workItem from="1580990199609" duration="14258000" />
     </task>
     <task id="LOCAL-00001" summary="The number of word">
       <created>1580559494898</created>
@@ -324,10 +319,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580990217799" />
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1580654165334">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1198" y="165" key="#com.intellij.ide.util.MemberChooser" timestamp="1581064674958">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1580654165334" />
+    <state x="1198" y="165" key="#com.intellij.ide.util.MemberChooser/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581064674958" />
     <state x="801" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580989554451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -345,29 +341,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580990629553" />
-    <state width="1876" height="260" key="GridCell.Tab.0.bottom" timestamp="1581006532772">
+    <state width="938" height="260" key="GridCell.Tab.0.bottom" timestamp="1581067422456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
-    <state width="1876" height="260" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581006532772" />
+    <state width="938" height="260" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581067422456" />
     <state width="1036" height="661" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="1876" height="260" key="GridCell.Tab.0.center" timestamp="1581006532772">
+    <state width="938" height="260" key="GridCell.Tab.0.center" timestamp="1581067422455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
-    <state width="1876" height="260" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581006532772" />
+    <state width="938" height="260" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581067422455" />
     <state width="1036" height="661" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="1876" height="260" key="GridCell.Tab.0.left" timestamp="1581006532772">
+    <state width="938" height="260" key="GridCell.Tab.0.left" timestamp="1581067422455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
-    <state width="1876" height="260" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581006532772" />
+    <state width="938" height="260" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581067422455" />
     <state width="1036" height="661" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="1876" height="260" key="GridCell.Tab.0.right" timestamp="1581006532772">
+    <state width="938" height="260" key="GridCell.Tab.0.right" timestamp="1581067422456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
-    <state width="1876" height="260" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581006532772" />
+    <state width="938" height="260" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581067422456" />
     <state width="1036" height="661" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
     <state width="1036" height="661" key="GridCell.Tab.1.bottom" timestamp="1580781087443">
       <screen x="1920" y="-504" width="1080" height="1880" />
@@ -389,11 +385,15 @@
     </state>
     <state width="1876" height="348" key="GridCell.Tab.1.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580535718874" />
     <state width="1036" height="661" key="GridCell.Tab.1.right/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1580990612691">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1581065847948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="369" y="109" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580652145039" />
-    <state x="461" y="162" key="SettingsEditor/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580990612691" />
+    <state x="461" y="162" key="SettingsEditor/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581065847948" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1581063312878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581063312878" />
     <state x="629" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1580990198326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -408,10 +408,10 @@
     </state>
     <state x="493" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1580654532878" />
     <state x="616" y="240" key="run.anything.popup/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580559509908" />
-    <state x="1089" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1581006015563">
+    <state x="1089" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1581065776637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="412" y="98" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580652126531" />
-    <state x="1089" y="194" width="672" height="678" key="search.everywhere.popup/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581006015563" />
+    <state x="1089" y="194" width="672" height="678" key="search.everywhere.popup/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581065776637" />
   </component>
 </project>
