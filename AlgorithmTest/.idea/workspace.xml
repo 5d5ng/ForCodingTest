@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e135d67-c5a0-4a61-9343-f81628f235ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BOJ/src/백트래킹/N_Queen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BOJ/src/백트래킹/N_Queen2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BOJ/src/백트래킹/N과M_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BOJ/src/백트래킹/N과M_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/백트래킹/연산자_끼워넣기.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BOJ/백트래킹/N과M_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BOJ/백트래킹/N과M_2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <recent name="C:\Users\LACUC\Desktop\1.Study\1.코딩테스트\ForCodingTest\AlgorithmTest\BOJ\src\정렬" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.N_Queen2">
+  <component name="RunManager" selected="Application.연산자_끼워넣기">
     <configuration name="N과M_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="백트래킹.N과M_3" />
       <module name="BOJ" />
@@ -348,12 +344,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="수_정렬하기3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="정렬.수_정렬하기3" />
+    <configuration name="연산자_끼워넣기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="백트래킹.연산자_끼워넣기" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="정렬.*" />
+          <option name="PATTERN" value="백트래킹.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -376,11 +372,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.연산자_끼워넣기" />
         <item itemvalue="Application.N_Queen2" />
         <item itemvalue="Application.N_Queen" />
         <item itemvalue="Application.N과M_4" />
         <item itemvalue="Application.N과M_3" />
-        <item itemvalue="Application.수_정렬하기3" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +414,7 @@
       <workItem from="1581840580320" duration="6230000" />
       <workItem from="1581846844002" duration="18052000" />
       <workItem from="1582186849354" duration="7927000" />
-      <workItem from="1582264141977" duration="13603000" />
+      <workItem from="1582264141977" duration="20328000" />
     </task>
     <task id="LOCAL-00001" summary="The number of word">
       <created>1580559494898</created>
@@ -514,58 +510,58 @@
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580990629553" />
     <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582103340457" />
-    <state width="938" height="260" key="GridCell.Tab.0.bottom" timestamp="1582355591354">
+    <state width="938" height="-10" key="GridCell.Tab.0.bottom" timestamp="1582460216206">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="260" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582355591354" />
-    <state width="938" height="260" key="GridCell.Tab.0.center" timestamp="1582355591354">
+    <state width="938" height="-10" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216206" />
+    <state width="938" height="-10" key="GridCell.Tab.0.center" timestamp="1582460216206">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="260" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582355591354" />
-    <state width="938" height="260" key="GridCell.Tab.0.left" timestamp="1582355591353">
+    <state width="938" height="-10" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216206" />
+    <state width="938" height="-10" key="GridCell.Tab.0.left" timestamp="1582460216206">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="260" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582355591353" />
-    <state width="938" height="260" key="GridCell.Tab.0.right" timestamp="1582355591354">
+    <state width="938" height="-10" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216206" />
+    <state width="938" height="-10" key="GridCell.Tab.0.right" timestamp="1582460216206">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="260" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582355591354" />
-    <state width="938" height="325" key="GridCell.Tab.1.bottom" timestamp="1582353244112">
+    <state width="938" height="-10" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216206" />
+    <state width="938" height="-10" key="GridCell.Tab.1.bottom" timestamp="1582460216207">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="325" key="GridCell.Tab.1.bottom/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.1.bottom/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="325" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582353244112" />
-    <state width="938" height="325" key="GridCell.Tab.1.center" timestamp="1582353244112">
+    <state width="938" height="-10" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216207" />
+    <state width="938" height="-10" key="GridCell.Tab.1.center" timestamp="1582460216206">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="325" key="GridCell.Tab.1.center/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.1.center/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="325" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582353244112" />
-    <state width="938" height="325" key="GridCell.Tab.1.left" timestamp="1582353244112">
+    <state width="938" height="-10" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216206" />
+    <state width="938" height="-10" key="GridCell.Tab.1.left" timestamp="1582460216206">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="325" key="GridCell.Tab.1.left/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.1.left/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="325" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582353244112" />
-    <state width="938" height="325" key="GridCell.Tab.1.right" timestamp="1582353244112">
+    <state width="938" height="-10" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216206" />
+    <state width="938" height="-10" key="GridCell.Tab.1.right" timestamp="1582460216206">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="938" height="325" key="GridCell.Tab.1.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.1.right/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="938" height="325" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582353244112" />
+    <state width="938" height="-10" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582460216206" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1581065847948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -600,11 +596,18 @@
     <state x="3009" y="194" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1582274749316" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BOJ/src/백트래킹/연산자_끼워넣기.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="board" />
         <watch expression="n" language="JAVA" />
-        <watch expression="m" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
