@@ -1,85 +1,75 @@
 package 백트래킹;
 
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.*;
 
+class P {
+    int x, y;
+
+    public P(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
 
 public class 스도쿠 {
     static int[][] board = new int[10][10];
+    static int countBlank = 0;
+    static ArrayList<P> blank = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
+
         for (int i = 1; i < 10; i++) {
             st = new StringTokenizer(br.readLine());
             for (int j = 1; j < 10; j++) {
                 board[i][j] = Integer.parseInt(st.nextToken());
-            }
-        }
-        func(1, 1);
-
-    }
-
-    static void func(int starti, int startj) {
-        if (starti > 9 || startj > 9) {
-            if (isvalid()) { //스도쿠 완성 되면?
-                for (int i = 1; i < 10; i++) {
-                    for (int j = 1; j < 10; j++) {
-                        System.out.print(board[i][j]);
-                    }
-                    System.out.println();
+                if (board[i][j] == 0) {
+                    countBlank++;
+                    blank.add(new P(i, j));
                 }
             }
-
-            return;
         }
-        for (int i = 1; i < 10 ; i++) {
-            if (validCol(starti)) { //행이 스도쿠를 만족한다면
-                func(starti + 1, 1);
-            } else if (valirow(starti,i)&&chkSquare(starti, startj)&& board[starti][startj] == 0) { // 스도쿠를 만족하지 않고 0이고 i 넣어도 문제가 없다면?
-                board[starti][startj] = i;
-                func(starti, startj + 1);
-                board[starti][startj] = 0;
+
+        fun(0);
+
+    }
+
+    static void fun(int idx) {
+        if (idx == blank.size()) {
+            for (int i = 1; i < 10; i++) {
+                for (int j = 1; j < 10; j++) {
+                    System.out.print(board[i][j]+" ");
+                }
+                System.out.println();
+            }
+            System.exit(1);
+
+        }
+        P p = blank.get(idx);
+        for (int i = 1; i < 10; i++) {
+            if (isValid(p.x, p.y, i)) {
+                board[p.x][p.y] = i;
+                fun(idx + 1);
+                board[p.x][p.y] = 0;
             }
         }
-        func(starti,startj+1);
-
     }
-    private static boolean isvalid() {
-        int chk = 0;
-        for (int i = 1; i < 10; i++) {
-            for (int j = 1; j < 10; j++) {
-                if(board[i][j]<1) return false;
-                chk += board[i][j];
+
+    private static boolean isValid(int x, int y, int target) {
+        for (int j = 1; j < 10; j++) { //가로 세로 확인
+            if (target == board[j][y] || board[x][j] == target) return false;
+        }
+        int k = (x-1) / 3*3 +1;
+        int l = (y-1) / 3*3 +1;
+        for (int i = 0; i <3 ; i++) {
+            for (int j = 0; j <3 ; j++) {
+                if(board[i+k][j+l]==target) return false;
             }
         }
-        return chk == (45 * 9);
-    }
 
-    private static boolean validCol(int Col) {
-        int sum = 0;
-        for (int i = 1; i < 10; i++) {
-            sum += board[Col][i];
-        }
-        return sum == 45;
-    }
-    private static boolean valirow(int col,int target) {
-
-        for (int i = 1; i < 10; i++) {
-            if(board[col][i]== target) return false;
-        }
         return true;
-    }
-    private static boolean chkSquare(int i,int j){
-         if(i%3>0||j%3>0) return true;
-         int sum =0 ;
-        for (int k = i-2; k <=i ; k++) {
-            for (int l = j-2; l <=j ; l++) {
-                if(board[k][l]<1) return false;
-                sum+=board[k][l];
-            }
-        }
-        return sum==45;
     }
 
 
