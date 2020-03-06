@@ -45,6 +45,7 @@ public class 스도쿠 {
                 System.out.println();
             }
             System.exit(1);
+            return;
 
         }
         P p = blank.get(idx);
