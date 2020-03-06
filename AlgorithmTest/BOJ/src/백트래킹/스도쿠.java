@@ -62,7 +62,7 @@ public class 스도쿠 {
         for (int j = 1; j < 10; j++) { //가로 세로 확인
             if (target == board[j][y] || board[x][j] == target) return false;
         }
-        int k = (x-1) / 3*3 +1;
+        int k = (x-1) / 3*3 +1 ;//작은블럭 확인
         int l = (y-1) / 3*3 +1;
         for (int i = 0; i <3 ; i++) {
             for (int j = 0; j <3 ; j++) {
