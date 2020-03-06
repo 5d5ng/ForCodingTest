@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e135d67-c5a0-4a61-9343-f81628f235ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BOJ/src/스택/스택.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/스택/괄호.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BOJ/src/스택/균형잡힌_세상.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BOJ/src/백트래킹/스도쿠.java" beforeDir="false" afterPath="$PROJECT_DIR$/BOJ/src/백트래킹/스도쿠.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BOJ/src/백트래킹/스도쿠2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BOJ/스택/Test.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/BOJ/src/백트래킹" />
@@ -60,26 +62,13 @@
       <recent name="C:\Users\LACUC\Desktop\1.Study\1.코딩테스트\ForCodingTest\AlgorithmTest\BOJ\src\정렬" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="달팽이는올라가고싶다" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="수학.달팽이는올라가고싶다" />
+  <component name="RunManager" selected="Application.균형잡힌_세상">
+    <configuration name="괄호" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="스택.괄호" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="수학.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="스도쿠" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="백트래킹.스도쿠" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="백트래킹.*" />
+          <option name="PATTERN" value="스택.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,103 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="스택" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="스택.스택" />
+    <configuration name="TokenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="스택.TokenTest" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="스택.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="스택.Test" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="스택.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="네번째점" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="수학2.네번째점" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="수학2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="상수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="문자열.상수" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="문자열.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="단어의개수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="문자열.단어의개수" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="문자열.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="직각삼각형" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="수학2.직각삼각형" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="수학2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="소수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="수학2.소수" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="수학2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="단어공부" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="문자열.단어공부" />
-      <module name="BOJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="문자열.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,6 +232,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="스도쿠" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="백트래킹.스도쿠" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="백트래킹.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="체스판다시칠하기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="브루트포스.체스판다시칠하기" />
       <module name="BOJ" />
@@ -425,12 +336,116 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="스택" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="스택.스택" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="스택.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="네번째점" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="수학2.네번째점" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="수학2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="상수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.상수" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="문자열.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="단어의개수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.단어의개수" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="문자열.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="직각삼각형" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="수학2.직각삼각형" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="수학2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="소수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="수학2.소수" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="수학2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="단어공부" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="문자열.단어공부" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="문자열.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="소수_구하기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="수학2.소수_구하기" />
       <module name="BOJ" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="수학2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="균형잡힌_세상" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="스택.균형잡힌_세상" />
+      <module name="BOJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="스택.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -492,11 +507,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.스택" />
-        <item itemvalue="Application.스도쿠" />
+        <item itemvalue="Application.균형잡힌_세상" />
+        <item itemvalue="Application.괄호" />
+        <item itemvalue="Application.TokenTest" />
         <item itemvalue="Application.스도쿠2" />
-        <item itemvalue="Application.달팽이는올라가고싶다" />
       </list>
     </recent_temporary>
   </component>
@@ -541,7 +555,8 @@
       <workItem from="1583055455343" duration="4699000" />
       <workItem from="1583153201434" duration="5228000" />
       <workItem from="1583238179924" duration="12149000" />
-      <workItem from="1583325747958" duration="7160000" />
+      <workItem from="1583325747958" duration="8701000" />
+      <workItem from="1583499119554" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="The number of word">
       <created>1580559494898</created>
@@ -640,37 +655,37 @@
     <state x="740" y="275" key="FileChooserDialogImpl/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1580990629553" />
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582870449212" />
     <state x="2660" y="275" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1583311652235" />
-    <state width="936" height="257" key="GridCell.Tab.0.bottom" timestamp="1583497086142">
+    <state width="936" height="257" key="GridCell.Tab.0.bottom" timestamp="1583497941092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.bottom/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="936" height="257" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497086142" />
+    <state width="936" height="257" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497941092" />
     <state width="938" height="355" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1583311653232" />
-    <state width="936" height="257" key="GridCell.Tab.0.center" timestamp="1583497086142">
+    <state width="936" height="257" key="GridCell.Tab.0.center" timestamp="1583497941092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.center/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="936" height="257" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497086142" />
+    <state width="936" height="257" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497941092" />
     <state width="938" height="355" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1583311653232" />
-    <state width="936" height="257" key="GridCell.Tab.0.left" timestamp="1583497086142">
+    <state width="936" height="257" key="GridCell.Tab.0.left" timestamp="1583497941092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.left/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="936" height="257" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497086142" />
+    <state width="936" height="257" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497941092" />
     <state width="938" height="355" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1583311653232" />
-    <state width="936" height="257" key="GridCell.Tab.0.right" timestamp="1583497086142">
+    <state width="936" height="257" key="GridCell.Tab.0.right" timestamp="1583497941092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1492" height="187" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580655361390" />
     <state width="938" height="325" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581763063133" />
     <state width="1036" height="661" key="GridCell.Tab.0.right/1920.-504.1080.1880/0.0.1920.1040@1920.-504.1080.1880" timestamp="1580781087443" />
-    <state width="936" height="257" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497086142" />
+    <state width="936" height="257" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583497941092" />
     <state width="938" height="355" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1583311653232" />
     <state width="936" height="358" key="GridCell.Tab.1.bottom" timestamp="1583330335561">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -709,14 +724,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581063312878" />
-    <state x="629" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583238324893">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2549" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583499128462">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="503" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580653983452" />
     <state x="629" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581833831921" />
     <state x="629" y="344" key="com.intellij.ide.util.TipDialog/1920.-504.1080.1880/0.0.1920.1040@0.0.1920.1040" timestamp="1581296344822" />
     <state x="629" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583238324893" />
-    <state x="2549" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1583054992439" />
+    <state x="2549" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1583499128462" />
     <state x="1769" y="-12" width="1577" height="719" maximized="true" key="dock-window-1" timestamp="1583330414740">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
