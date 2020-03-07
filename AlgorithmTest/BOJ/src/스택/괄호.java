@@ -21,8 +21,8 @@ public class 괄호 {
                 else if(c==')')
                     s.pop();
             }
-            if(s.isEmpty()) System.out.println("YES");
-            else System.out.println("NO");
+            if(s.isEmpty()) System.out.println("yes");
+            else System.out.println("no");
             s.clear();
         }
         br.close();

@@ -31,7 +31,6 @@ public class 스도쿠 {
                 }
             }
         }
-
         fun(0);
 
     }
