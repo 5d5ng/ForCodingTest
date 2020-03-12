@@ -35,9 +35,6 @@ public class 스택수열 {
                 present = s.pop();
                 cntPop++;
             }
-
-
-
         }
 //        System.out.println(sb);
 
