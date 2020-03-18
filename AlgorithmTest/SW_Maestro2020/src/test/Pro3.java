@@ -1,64 +1,55 @@
 package test;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Pro3 {
-    static int n, k;
-    static int[] co;
-    static int[] ar;
-    static boolean[] vis;
+    static int[] ar ;
     static int min = Integer.MAX_VALUE;
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        n = Integer.parseInt(st.nextToken());
-        k = Integer.parseInt(st.nextToken());
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
         ar = new int[n];
-        co = new int[k + 1];
-        vis = new boolean[k + 1];
-
-
-        st = new StringTokenizer(br.readLine());
-        for (int i = 0; i < n; i++) {
-            ar[i] = Integer.parseInt(st.nextToken());
+        for (int i = 0; i < ar.length; i++) {
+            ar[i] = sc.nextInt();
         }
-        LinkedList<Integer> l = new LinkedList<>();
-        combination(l, n, k, 0);
+        int[] list = new int[n];
+        Arrays.fill(list,-1);
+        fun(0,k-1,list);
         System.out.println(min);
-
-
     }
 
-    private static void combination(LinkedList<Integer> list, int n, int r, int index) {
-        if (r == 0) {
-            for (int i : list) {
-                System.out.print(i + " ");
+
+
+    static void fun(int depth, int size, int[] num) {
+        if (size == 0) {
+            int target = 0;
+            int flag = 0;
+            for (int i = 1; i < num.length; i++) { // 0부터 짜르면 어차피 ar[0]-ar[0] 이라 굳이 안더해줘도 됨
+                if(num[i]==1){
+                    System.out.print(i+" ");
+                    target+=(ar[i-1]-ar[flag]);
+                    flag = i;
+                }
             }
+            if(flag==-1){
+                target = ar[ar.length-1]-ar[0];
+            }
+            else {
+                target += ar[ar.length - 1] - ar[flag];
+            }
+            min = Math.min(target,min);
             System.out.println();
-            int sum = 0;
-            int start = list.get(1);
-            for (int i = 2; i < list.size()-1; i++) {
-              if(list.get(i)-start>1){
-                  sum+=ar[list.get(i)-1] - ar[start];
-              }
-            }
-            start = list.get(k-1);
-            sum+=ar[n-1]-ar[start];
-            System.out.println(sum);
-            min = Math.min(sum,min);
+            return;
+        }
+        if (depth == num.length) {
 
             return;
         }
-        if (index == n) return;
 
-        list.add(index);
-        combination(list, n, r - 1, index + 1);
-        list.removeLast();
-        combination(list, n, r, index + 1);//안뽑았으니, r
+        fun(depth + 1, size , num); // num[depth]숫자를 뽑지않은 경우
+        num[depth] = 1;
+        fun(depth + 1, size -1, num);
+        num[depth] = -1;
     }
-
 }
