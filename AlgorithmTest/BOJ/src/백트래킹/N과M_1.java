@@ -1,42 +1,36 @@
 package 백트래킹;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class N과M_1 {
-    static int n, m;
-    static int[] visited ;
-    static int[] res;
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] input = br.readLine().split(" ");
-        n = Integer.parseInt(input[0]);
-        m = Integer.parseInt(input[1]);
-        visited = new int[n+1];
-        res = new int [m+1];
-        DFS(0);
-
-    }
-    public static void DFS(int num) {
-
-        if(num == m){ //수열의 사이즈를 다채웠다면
-            for (int i = 0; i < m; i++) {
-                System.out.print(res[i]+" ");
-            }
-            System.out.println();
-            return;
-        }
-        for (int i = 1; i <= n; i++) { // 사용할 수 있는 수 1부터  n까지 다 넣어봄
-            if(visited[i] == 0){
-                visited[i] = 1; //방문 표시
-                res[num] = i; //수열 저장
-                DFS(num+1); //다음 칸 전진
-                visited[i] = 0; // 방문표시 제거
-            }
-
-        }
-
-
+        String [] in  = br.readLine().split(" ");
+        int n = Integer.parseInt(in[0]);
+        int m = Integer.parseInt(in[1]);
+        boolean[] visit = new boolean[n];
+        int[] ar = new int[m];
+        fun(n,m,0,visit,ar);
     }
 
+    static void fun(int n,int m,int depth,boolean[] vis,int[] ar){
+      if(depth==m){  //숫자를 m개 뽑은 경우 출력
+         for(int i:ar)
+             System.out.print(i+" ");
+          System.out.println();
+          return;
+
+      }
+        for (int i = 0; i <n ; i++) { //호출될때마다 0부터  끝까지 방문되었는지 확인
+            if(!vis[i]){ //방문되지않은 곳이라면
+                vis[i]=true; // 방문 표시
+                ar[depth] = i+1; // 배열에 그 데이터 저장
+                fun(n,m,depth+1,vis,ar); // 숫자를 하나 뽑았으니까 깊이 1증가
+                vis[i] = false; // 다음 호출을 위해 방문표시 지움
+            }
+        }
+
+    }
 
 }

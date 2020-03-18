@@ -1,45 +1,61 @@
 package 백트래킹;
 
 import java.io.*;
+import java.util.StringTokenizer;
 
 public class N과M_2 {
-    static int[] visited;
-    static int[] res;
-    static int n, m;
-
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] input = br.readLine().split(" ");
-        n = Integer.parseInt(input[0]);
-        m = Integer.parseInt(input[1]);
-        visited = new int[n+1];
-        res = new int[m+1];
-        fun(0);
-
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+        boolean[] vis = new boolean[n];
+        int [] ar = new int[m];
+//        fun2(n,m,0,0,vis,ar);
+        fun(n,m,0,vis,ar);
     }
-    public static void fun(int num) {
-        if (num == m) { // 수열이 m까지 차면 무조건 종료
-            if(isvalid()) { //츌력할 자격이 있다면? 출력 후 종료
-                for (int i = 0; i < m; i++)
-                    System.out.print(res[i] + " ");
-                System.out.println();
+    //방법 1
+    static void fun(int n,int m,int depth,boolean[] vis,int[] ar){
+        if(depth==m){ // 다 뽑은 경우
+            for (int i = 0; i <ar.length ; i++) {
+                System.out.print(ar[i]+" ");
             }
+            System.out.println();
             return;
         }
-        for (int i = 1; i <= n ; i++) { //1부터 시작해서 방문했는지 확인
-            if (visited[i] == 0) { //방문한적 없다면
-                visited[i] = 1; //방문 표시 후
-                res[num] = i;
-                fun(num + 1); //한 칸 전진
-                visited[i] = 0;
+        int i = 0;
+        if(depth>0) i = ar[depth-1]; //깊이가 0이아닌 경우 이전에 선택했던 숫자를 i로 시작
+        for (; i <n ; i++) {
+            if(i<0) i=0;
+            if(!vis[i]){
+                vis[i] = true;
+                ar[depth] = i+1;
+                fun(n,m,depth+1,vis,ar);
+                vis[i] = false;
             }
         }
     }
-    public static boolean isvalid(){
-        for (int i = 1; i < m; i++) {
-            if(res[i-1]>res[i])
-                return false;
+    //방법2
+    static void fun2(int n,int m,int depth,int size,boolean[] vis,int[]ar){
+
+        if(m==size){
+            for (int i = 0; i <ar.length ; i++) {
+                System.out.print(ar[i]+" ");
+            }
+            System.out.println();
+            return;
         }
-        return true;
+        if(depth ==n){
+            return;
+        }
+        vis[depth] = true;
+        ar[size] = depth+1;
+        fun2(n,m,depth+1,size+1,vis,ar);
+        vis[depth] = false;
+
+        fun2(n,m,depth+1,size,vis,ar);
+
+
+
     }
 }
