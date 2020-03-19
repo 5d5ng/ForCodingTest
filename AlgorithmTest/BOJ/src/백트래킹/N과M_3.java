@@ -1,33 +1,32 @@
 package 백트래킹;
-import javax.tools.ForwardingFileObject;
+
 import java.io.*;
+import java.util.StringTokenizer;
 
 public class N과M_3 {
-    static int n,m;
-    static int[] res;
-    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String [] in = br.readLine().split(" ");
-         n = Integer.parseInt(in[0]);
-         m = Integer.parseInt(in[1]);
-         res = new int [m];
-        fun(0);
+   static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+    public static void main(String[] args)throws Exception {
+        BufferedReader  br =new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+        int []ar = new int[m];
+        fun(n,m,ar,0);
+        bw.flush();
         bw.close();
     }
-    public static void fun(int num) throws IOException {
-        if(num == m) {
-            for (int i = 0; i < m; i++) {
-               // System.out.print(res[i]+" ");
-                bw.write(Integer.toString(res[i])+" ");
-
+    static void fun(int n,int m,int[]ar ,int size) throws IOException {
+        if(size ==m){
+            for(int i:ar){
+                bw.write(i+" ");
             }
             bw.write("\n");
             return;
         }
-        for (int i = 1; i <=n ; i++) {
-            res[num] = i;
-            fun(num+1);
+        for (int i = 0; i <n ; i++) {
+            ar[size] = i+1;
+            fun(n,m,ar,size+1);
         }
     }
 }
