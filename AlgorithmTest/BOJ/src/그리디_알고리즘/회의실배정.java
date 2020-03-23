@@ -6,31 +6,30 @@ public class 회의실배정
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        int [][] meeting = new int[n][2];
-        int finishTime = 0;
+        int[][] meet = new int[n][2];
         for (int i = 0; i <n ; i++) {
             StringTokenizer st  = new StringTokenizer(br.readLine());
-            meeting[i][0] = Integer.parseInt(st.nextToken());
-            meeting[i][1] = Integer.parseInt(st.nextToken());
-            if(meeting[i][1]>finishTime) finishTime = meeting[i][1];
-        }
-        int[] timeT = new int[finishTime+1];
-        int max = Integer.MIN_VALUE;
-        Arrays.sort(meeting, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                return o1[0]-o2[0];
-            }
-        });
-        for (int[] ar:meeting){
-            System.out.println(ar[0]);
+            meet[i][0] = Integer.parseInt(st.nextToken());
+            meet[i][1] = Integer.parseInt(st.nextToken());
         }
 
-    }
-    static boolean isTrue(int[] T){
-        for(int i:T){
-            if(i>1) return false;
+        Arrays.sort(meet, new Comparator<int[]>(){
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if(o1[1]==o2[1]){
+                    return o1[0] - o2[0];
+                }
+                else return o1[1]-o2[1];
+            }
+        });
+        int endT = -1;
+        int res = 0;
+        for (int i = 0; i < meet.length; i++) {
+            if(meet[i][0]>=endT){
+                endT = meet[i][1];
+                res++;
+            }
         }
-        return true;
+        System.out.println(res);
     }
 }
