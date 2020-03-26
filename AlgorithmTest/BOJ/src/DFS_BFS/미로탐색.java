@@ -9,7 +9,7 @@ class Point{
     Point(int y,int x,int hop){
         this.y = y;
         this.x = x;
-        this.hop = 0;
+        this.hop = hop;
     }
 }
 public class 미로탐색 {
@@ -34,29 +34,29 @@ public class 미로탐색 {
     static int BFS(int[][]maze,boolean[][]visit,int y,int x){
 
         Queue<Point> q = new LinkedList<>();
-        q.add(new Point(y,x,0));
+        q.add(new Point(y,x,1));
         while(!q.isEmpty()) {
             Point p = q.poll();
-            if(p.y==maze.length&&p.x==maze[0].length){
+            if(p.y==maze.length-1&&p.x==maze[0].length-1){
                 return p.hop;
             }
-            if (x + 1 <= maze[0].length - 1 && !visit[y][x + 1] && maze[y][x + 1] == 1) {
-                visit[y][x + 1] = true;
-                q.add(new Point(y, x + 1,p.hop+1));
+            if (p.x + 1 <= maze[0].length - 1 && !visit[p.y][p.x + 1] && maze[p.y][p.x + 1] == 1) {
+                visit[p.y][p.x + 1] = true;
+                q.add(new Point(p.y, p.x + 1,p.hop+1));
 
             }
-            if (y + 1 <= maze.length - 1 && !visit[y + 1][x] && maze[y + 1][x] == 1) {
-                visit[y + 1][x] = true;
-                q.add(new Point(y + 1, x,p.hop+1));
+            if (p.y + 1 <= maze.length - 1 && !visit[p.y + 1][p.x] && maze[p.y + 1][p.x] == 1) {
+                visit[p.y + 1][p.x] = true;
+                q.add(new Point(p.y + 1, p.x,p.hop+1));
 
             }
-            if (x - 1 >= 1 && !visit[y][x - 1] && maze[y][x - 1] == 1) {
-                visit[y][x - 1] = true;
-                q.add(new Point(y, x - 1,p.hop+1));
+            if (p.x - 1 >= 1 && !visit[p.y][p.x - 1] && maze[p.y][p.x - 1] == 1) {
+                visit[p.y][p.x - 1] = true;
+                q.add(new Point(p.y, p.x - 1,p.hop+1));
             }
-            if (y - 1 >= 1 && !visit[y - 1][x] && maze[y - 1][x] == 1) {
-                visit[y - 1][x] = true;
-                q.add(new Point(y - 1, x,p.hop+1));
+            if (p.y - 1 >= 1 && !visit[p.y - 1][p.x] && maze[p.y - 1][p.x] == 1) {
+                visit[p.y - 1][p.x] = true;
+                q.add(new Point(p.y - 1, p.x,p.hop+1));
             }
         }
         return -1;
