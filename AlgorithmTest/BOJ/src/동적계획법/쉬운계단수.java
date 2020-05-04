@@ -6,16 +6,26 @@ public class 쉬운계단수 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
-        //n의 자리 1의자리 9개 2 일때 17개
-        long[] dp = new long[(N + 1)];
-        dp[1] = 9;
-        if (N > 1) {
-            dp[2] = 17;
-            for (int i = 3; i <= N; i++) {
-                dp[i] = 17 * dp[i - 1];
-                dp[i] %= 1000000000;
+         int  flag = 1000000000;
+        long[][] dp = new long[12][N+1];
+        dp[0][1] = 0;
+
+        for(int i=2;i<=10;i++) //n이 1 인 경우
+            dp[i][1] = 1;
+
+
+        for(int i=2;i<=N;i++){
+            for(int j=1;j<=10;j++){
+                dp[j][i] = dp[j-1][i-1]%flag +dp[j+1][i-1]%flag;
+                dp[j][i] %=flag;
+
             }
         }
-        System.out.println(dp[N]);
+        long res = 0;
+        for(int j=1;j<=10;j++){
+            res += dp[j][N];
+            res%=flag;
+        }
+        System.out.println(res);
     }
 }
