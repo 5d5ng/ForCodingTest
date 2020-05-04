@@ -7,7 +7,8 @@ public class 쉬운계단수 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
          int  flag = 1000000000;
-        long[][] dp = new long[12][N+1];
+        long[][] dp = new long[12][N+1]; //행은 0-9 열은 1-N 을 저장하기 위함
+        //인덱스 오버플로우 방지를 위해 각각 12 ,N+1로 할당
         dp[0][1] = 0;
 
         for(int i=2;i<=10;i++) //n이 1 인 경우
