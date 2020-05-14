@@ -4,33 +4,37 @@ import java.util.ArrayList;
 
 public class 큰수만들기 {
     public static void main(String[] args) {
-        String s ="4177252841";
+        String s ="4377252841";
 
         System.out.println(solution(s,4));
     }
     public static String solution(String number,int k) {
-        String answer = "";
+        StringBuilder sb = new StringBuilder();
         int len = number.length();
-        ArrayList<Integer> num = new ArrayList<>();
+        int[]num = new int[len];
         for(int i=0;i<len;i++)
         {
-            num.add(Integer.parseInt(number.substring(i,i+1)));
+            num[i] = Integer.parseInt(number.substring(i,i+1));
         }
-        int make = len-k; //자릿수
-        while(answer.length()<len-k) {
+        int i = 0,j=0;
+        int make = len-k;
+        while(i<len) {
             int max = -1;
-            int maxIndex = -1;
-            for(int i=0;i<len-make;i++){
-                if(num.get(i)>max){
-                    max = num.get(i);
+            int maxIndex =-1;
+            for (; i <= len - make + j; i++) {
+                if (max < num[i]) {
+                    max = num[i];
                     maxIndex = i;
                 }
-
             }
-            answer+=Integer.toString(max);
-            num.remove(maxIndex);
-            make--;
+            sb.append(max);
+
+            num[maxIndex] = -1;
+            i = maxIndex+1;
+            j++;
+            if(sb.length()==make)break;
         }
-        return answer;
+
+        return sb.toString();
     }
 }
