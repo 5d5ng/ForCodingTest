@@ -12,6 +12,7 @@ public class H_index {
     }
 
     public int solution(int[] citations) {
+
         int h = 0 ;
         Arrays.parallelSort(citations);
         for (int i = 0; i <=citations[citations.length-1] ; i++) { //논문 인용최대값까지
@@ -27,5 +28,6 @@ public class H_index {
             if(cnt1>=i && cnt2<=i ) h = Math.max(i,h);
         }
         return h;
+
     }
 }
