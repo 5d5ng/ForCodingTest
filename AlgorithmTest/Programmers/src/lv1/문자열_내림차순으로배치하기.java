@@ -3,6 +3,8 @@ package lv1;
 
 import  java.util.*;
 public class 문자열_내림차순으로배치하기 {
+
+
     public static void main(String[] args) {
         String s="Zbcdefg";
         System.out.println(solution(s));
@@ -29,9 +31,13 @@ public class 문자열_내림차순으로배치하기 {
     }
 
     public static String solution2(String s) {
+        List<Integer> list = new ArrayList<>();
+       int a = 3;
+
         char [] ar = s.toCharArray();
         Arrays.sort(ar);
         StringBuilder sb = new StringBuilder(new String(ar)).reverse();
         return sb.toString();
     }
+
 }
