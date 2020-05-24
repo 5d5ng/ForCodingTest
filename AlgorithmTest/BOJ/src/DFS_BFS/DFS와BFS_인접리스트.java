@@ -66,9 +66,9 @@ public class DFS와BFS_인접리스트 {
        }
        G[start].visited = true;
         System.out.print(start+" ");
-       for(int i:G[start].list){
+       for(int  i:G[start].list){
            if(!G[i].visited){
-               dfs(G,i);
+                dfs(G,i);
            }
        }
 
