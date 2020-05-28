@@ -6,7 +6,6 @@ public class 괄호변환 {
         System.out.println(solution(s));
     }
     public static String solution(String p) {
-
         if(p.length()==0) return "";
         if(isRight(p)) return p;
         String answer = "";
