@@ -1,11 +1,13 @@
 def solution(s):
     answer =''
+    s = s.strip()
     s = s.lower()
-    lst = s.split()
+    lst = s.split(" ")
     for st in lst:
         st = st.capitalize()
         answer+=st+" "
-    answer= answer[:-1]
-    return answer
+
+    return answer[:-1]
+
 
 
