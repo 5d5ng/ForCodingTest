@@ -17,4 +17,7 @@ print(arr2)
 
 print(solution(arr,arr2))
 # 
+import itertools 
+lst = list(itertools.permutations(arr,2))
+print(lst)
 

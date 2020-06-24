@@ -25,8 +25,7 @@ def solution2(A,B):
     for A_row in A:
         lst = []
         for B_row in zip(*B):
-            print(B_row)
-            
+            # print(B_row)     
             temp =  sum (a*b for a,b in zip(A_row,B_row) )
             lst.append(temp)
         ans.append(lst)
