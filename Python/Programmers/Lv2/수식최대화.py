@@ -1,41 +1,34 @@
-# import re
-# def solution(expression):
-#   answer = 0
-#   rule = ['*+-','*-+','+*-','+-*','-*+','-+*'] # 가능한 모든 우선순위 경우의 수
-#   nums = re.findall("\d+",expression)
-#   exp = re.findall("\*|\+|-",expression)
-#   newE = []
-#   for i in range(len(exp)):
-#     newE.append(nums[i])
-#     newE.append(exp[i])
-#   newE.append(nums[-1])
-#   for r in rule:
-#     temp = newE
-#     for e in r:
-#       i = 0
-#       while temp.count(e)>0:
-#         if ! temp[i].isdigit():
-#           if(temp[i]=="*"):
-            
-
-      
-
-      
-
-
-
-  
-
-
-    
-  # for r in rule:
-
 import re
-ex = "100-200*300-500+20"
-nums =re.split(r"-|\*|\+" ,ex)
-exp = re.findall("[0-9]+",ex) # 숫자이어지게 추출
-ee = re.findall("\d",ex)# 한자리씩 추출
-ee = re.findall("- | \* | \+ " ,ex)  
-# print(ee)
+import copy
+def solution(expression):
+  answer = 0
+  rule = ['*+-','*-+','+*-','+-*','-*+','-+*'] # 가능한 모든 우선순위 경우의 수
+  nums = re.findall("\d+",expression)
+  nums = list(map(int,nums))
+  exp = re.findall("\*|\+|-",expression)
 
-print(ex.index("0"))
+  lst = []
+  ans = 0
+  for r in rule:
+    tempnums = copy.deepcopy(nums)
+    tempexp = copy.deepcopy(exp)
+    
+    for i in r:
+      while i in tempexp:
+        idx = tempexp.index(i)
+        tempexp.pop(idx)
+        temp = 1
+        if idx >=0:
+          if i == "*":
+            temp = tempnums.pop(idx)*tempnums.pop(idx)
+          elif i == "-":
+            temp = tempnums.pop(idx)-tempnums.pop(idx)
+          else:
+            temp = tempnums.pop(idx)+tempnums.pop(idx)
+        tempnums.insert(idx,temp)
+        if(len(tempnums)==1):
+          ans = max(abs(tempnums[0]),ans)    
+  return ans
+     
+
+print(solution(ex))
