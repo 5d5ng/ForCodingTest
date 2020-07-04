@@ -13,9 +13,13 @@ def solution(people,limit):
   return cnt
       
 p = [50,60,40,40]
+while not p is None:
+  p.pop()
+  print(p)
+p.clear()
 print(p is None)
 print ( not p)
-a = solution(p,100)
-print(a)
+# a = solution(p,100)
+# print(a)
       
   
