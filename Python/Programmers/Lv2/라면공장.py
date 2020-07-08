@@ -1,37 +1,31 @@
-# import copy
-# def solution(stock,dates,supplies,k):
-#   ans = 0
-#   lst = []
-#   temp = []
-#   for d,s in zip(dates,supplies):
-#     temp.append(d)
-#     temp.append(s)
-#     lst.append(copy.deepcopy(temp))
-#     temp.clear()
-#   lst.sort(key=lambda l: l[1],reverse=True)
-#   flag = 0
-#   print(lst)
-#   while(k>flag) and len(lst)>0:
-#     if stock >= lst[0][0]:
-#       stock = (stock-lst[0][0])+lst[0][1]
-#       flag+=lst[0][1]
-#       ans+=1
-#     lst.pop(0)
-  
-#   return ans
 
-
+# 최대 힙 만들기
+  # for i in supplies:
+  #   heapq.heappush(heap,(-i,i))
+  # print(heapq.heappop(heap)[1])
 
 import heapq
 def solution(stock,dates,supplies,k):
-  ans = 0
-  heapq._heapify_max(supplies)
-  for i in range(len(stock)):
+  answer = 0
+  heap = []
+  start = 0
+  while stock<k:
+    for i in range(start,len(dates)):
+      if dates[i] <= stock:
+        heapq.heappush(heap,(-supplies[i],supplies[i]))
+        start+=1
+      else:
+        break
+    stock+=heapq.heappop(heap)[1]
+    answer+=1
+  return answer
+
+
     
 
-
+stock = 4
 dates = [1,2,3,4]
-supp = [10,40,20,30,1,5,2]
+supp = [10,40,20,30]
 k  = 100
 solution(stock,dates,supp,k)
 
