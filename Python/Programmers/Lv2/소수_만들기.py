@@ -15,6 +15,10 @@ def solution(nums):
           ans+=1
   return ans
 
-t = [1,2,7,6,4]
+t = [1,2,3,4]
+from itertools import combinations as cb
+for i in cb(t,3):
+  print(i)
+
 a = solution(t)
-print(a)
+# print(a)
