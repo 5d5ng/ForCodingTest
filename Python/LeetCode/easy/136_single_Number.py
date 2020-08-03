@@ -11,3 +11,4 @@ class Solution(object):
 lst = [1,1,2,2,4]
 c1 = Solution()
 print(c1.singleNumber(lst))
+print(Null)
