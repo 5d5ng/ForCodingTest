@@ -1,6 +1,6 @@
 package easy;
 
-public class Maximum_Depth_of_Binary_Tree {
+public class Maximum_Depth_of_Binary_Tree104 {
 
     public static void main(String[] args) {
 
