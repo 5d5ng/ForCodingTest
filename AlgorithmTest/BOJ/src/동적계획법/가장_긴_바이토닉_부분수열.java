@@ -30,6 +30,7 @@ public class 가장_긴_바이토닉_부분수열 {
         }
         int res = 0;
         for(int i=1;i<=n;i++){
+            System.out.println("down[i] "+down[i]);
             res = Math.max(res,up[i]+down[i]-1);
         }
         System.out.println(res);
