@@ -36,3 +36,18 @@ banned = ['a']
 paragraph = "a, a, a, a, b,b,b,c, c"
 
 print(app.mostCommonWord(paragraph,banned))
+
+import re
+import collections
+from typing import List
+class Solution2:
+    def mostCommonWord2(self, paragraph: str, banned: List[str]) -> str:
+
+        words = [word for word in re.sub(r'[^\w]',' ',paragraph).lower().split() 
+                if word not in banned ]
+        counts = collections.Counter(words)
+        print(counts)
+        return counts.most_common(1)[0][0]
+
+app = Solution2()
+print(app.mostCommonWord2(paragraph,banned))
