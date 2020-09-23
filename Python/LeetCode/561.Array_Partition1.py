@@ -9,4 +9,5 @@ class Solution:
 
 input = [1, 4, 3, 2]
 app = Solution()
+
 print(app.arrayPairSum(input))
