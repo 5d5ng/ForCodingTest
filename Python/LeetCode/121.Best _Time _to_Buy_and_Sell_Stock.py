@@ -11,6 +11,7 @@ class Solution:
                 minProfit = prices[i]
             elif ans < prices[i] - minProfit:
                 ans = prices[i] - minProfit
+
         return ans
 
     def maxProfit2(self,prices:List[int])-> int:
