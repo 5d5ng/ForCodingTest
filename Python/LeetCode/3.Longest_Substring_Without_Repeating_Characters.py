@@ -14,6 +14,7 @@ class Solution:
             used[val] = i
         return max_len
 
+    
 
 app = Solution()
 s ="aabaab!bb"
